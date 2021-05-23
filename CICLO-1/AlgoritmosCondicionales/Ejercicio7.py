@@ -1,0 +1,20 @@
+print('Este programa le solicita al usuario nombre y signo zodiacal;')
+#El programa solo imprime el nombre del usuario si este es Aries
+name = str(input('Ingrese su nombre: '))
+print('|Aries       | 1  |')
+print('|Tauro       | 2  |')
+print('|Géminis     | 3  |')
+print('|Cáncer      | 4  |')
+print('|Leo         | 5  |')
+print('|Virgo       | 6  |')
+print('|Libra       | 7  |')
+print('|Escorpio    | 8  |')
+print('|Ofiuco      | 9  |')
+print('|Sagitario   | 10 |')
+print('|Capricornio | 11 |')
+print('|Acuario     | 12 |')
+signo = int(input('Cuál es tu signo (1-13): '))
+if signo == 1:
+    print('Hola!! ', name)
+else:
+    print('Fin del programa')
