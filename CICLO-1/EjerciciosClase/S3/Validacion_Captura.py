@@ -1,0 +1,1 @@
+#Semana 3 - Clase 1 - Validación y captura de excepciones - Ejercicio 1
