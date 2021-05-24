@@ -1,4 +1,4 @@
-#Semana 3 - Clase 1 - Validación y captura de excepciones - Ejercicio 1
+#Semana 2 - Clase 4 - Ciclos - Ejercicio 14
 '''
 Hacer un probrama que calcule la media de X números,se dajarán de solicitar
 hasta que ingrese un cero
