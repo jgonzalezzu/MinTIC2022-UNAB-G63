@@ -15,9 +15,10 @@ Consideraciones:
 
 Archivos correspondiente a cada ciclo
     - Ciclo 1:
-        - AlgoritmosOperadores - Semana 1
-        - AlgoritmosCondicionales - Semana 2
-        - Ciclos - Semana 2 - PENDIENTE
+        - AlgoritmosOperadores(PseInt): Semana 1
+        - AlgoritmosOperadores(PYTHON INICIA AQUÍ): Semana 2
+        - AlgoritmosCondicionales: Semana 2
+        - EstructurasIterativas: Semana 2
     - Ciclo 2:
     - Ciclo 3: 
     - Ciclo 4:
@@ -25,15 +26,15 @@ Archivos correspondiente a cada ciclo
 PROGRAMA:
     Ciclo 1:
         - Semana 1:
-            - Clase 1:
-            - Clase 2:
-            - Clase 3:
-            - Clase 4:
+            - Clase 1: Conceptualización e introducción
+            - Clase 2: Pensamiento lógico estructurado
+            - Clase 3: Pseudocódigo
+            - Clase 4: Diagramas de flujo
         - Semana 2:
-            - Clase 1:
-            - Clase 2:
-            - Clase 3:
-            - Clase 4:
+            - Clase 1: Variables
+            - Clase 2: Entradas, salidas y operadores aritméticos
+            - Clase 3: Condicionales
+            - Clase 4: Ciclos
         - Semana 3:
             - Clase 1:
             - Clase 2:
