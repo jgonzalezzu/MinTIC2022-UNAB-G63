@@ -1,5 +1,5 @@
 print('Este programa calcula el descuento total de las camisetas')
-count = int(input('Ingrese la cantidad de camiestas: '))
+count = int(input('Ingrese la cantidad de camisetas: '))
 # valor = float(input('Ingrese el valor de la camiseta'))
 valor = float(1.0)
 if count >= 3:
