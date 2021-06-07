@@ -11,7 +11,7 @@ while option != 3:
     try:
         print('1. Ingresar jugadores')
         print('2. Mostrar jugadores')
-        print('-1. Salir del programa')
+        print('3. Salir del programa')
         option = int(input('ingrese opción del menú > '))
     except ValueError:
         print('Ingrese una opción válida')
