@@ -81,7 +81,7 @@ while opcion !=-1:
     try:
         opcion = menu()
     except ValueError:
-        print('Error! Ingrese una opción válida')
+        print('Error! Ingrese una opción válida')   
 
     if opcion == 1:
         cls()
