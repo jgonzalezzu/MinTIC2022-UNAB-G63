@@ -9,7 +9,7 @@ jugadores = {}
 option = 0
 while option != 3:
     try:
-        print('1. Ingresar jugadores')
+        print('1. Ingresar JUGADOR')
         print('2. Mostrar jugadores')
         print('3. Salir del programa')
         option = int(input('ingrese opción del menú > '))
@@ -23,6 +23,7 @@ while option != 3:
         num_jugador = int(input('Ingrese el número característico del jugador > '))
         valor = {jugador:num_jugador}
         jugadores.update(valor)
+        clear()
 
     elif option == 2:
         if len(jugadores) == 0:
@@ -39,16 +40,19 @@ while option != 3:
     
     elif option == 3:
         exit_confirmation = str(input('Desea salir del programa S/N > '))
-        if exit_confirmation == 'N':
+        if (exit_confirmation == 'N') or (exit_confirmation == 'n'):
             print('OK')
             time.sleep(2)
             clear()
             option = 0
-        elif exit_confirmation == 'S':
+        elif (exit_confirmation == 'S') or (exit_confirmation == 's'):
             clear
             break
         else: 
             print('Ingrese una opción válida')
+            time.sleep(2)
+            clear()
+            option = 0
 
     else:
         print('Error! Ingrese una opción válida')
