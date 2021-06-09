@@ -16,7 +16,6 @@ while option != 3:
     except ValueError:
         print('Ingrese una opción válida')
 
-
     if option == 1:
         clear()
         jugador = str(input('Ingrese el nombre del jugador > '))
