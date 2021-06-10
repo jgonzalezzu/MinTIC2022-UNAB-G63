@@ -9,6 +9,8 @@ print('Tupla con valores int > ',tupla)
 #TODO: Al imprimir se obtiene » (1, 2, 3, 4, 5, 6)
 tupla1 = 1, 'a', 2, 'b', 3, 'c', 3.14151698
 print('Tupla con valores mixtos > ', tupla1)
+#TODO: Se puede acceder al índice de la tupla como se hace en las listas con []
+print('Accediento a el íntice 3 de la tupla1 > ', tupla1[3])
 #TODO: Se puede definir la tupla con el constructor tuple(), IMPORTANTE: Uso del doble paréntesis
 tupla_con_constructor = tuple((1,2,3,4,5,6))
 print('Tupla usando el constructuor tuple > ', tupla_con_constructor)
