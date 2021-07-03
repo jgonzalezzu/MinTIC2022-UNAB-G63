@@ -1,0 +1,22 @@
+{
+    "cod01": {
+        "Nombre": "name",
+        "Apellido": "lastname",
+        "Notas": [
+            3.5
+        ],
+        "Edad": 10,
+        "Grado": 10,
+        "Definitiva": 3.5
+    },
+    "001": {
+        "Nombre": "Nombre 1",
+        "Apellido": "Apellido 1",
+        "Edad": 10,
+        "Grado": 10,
+        "Notas": [
+            3.4
+        ],
+        "Definitiva": 3.4
+    }
+}

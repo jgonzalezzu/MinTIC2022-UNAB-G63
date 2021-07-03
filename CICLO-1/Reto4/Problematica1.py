@@ -38,9 +38,10 @@ user = str('1234')
 passwrd = str('1234')
 
 # Variables de operación
-estudiantes = {}
-notas=[]
-definitivas = []
+estudiantes = {} #varible de almacenamiento de datos
+notas=[] # Variable para almacenar las notas de cada estudiante
+definitivas = [] # Variable para almacenar las definitivas
+
 # Definición de funciones 
 def cls():
     if os.name == "posix":
@@ -74,20 +75,19 @@ def login():
 
 def input_validation_type(type,message):
     # Usar 1 para validad enteros
+    # Usar 2 para validad flotantes
     error_time_delay = 2
     control_int = 1
-    control_float = 1
-    # Usar 2 para validad flotantes
+    control_float = 1    
     if type == 1:
         while control_int == 1:
             try:
                 value = int(input(message))
-                # print('valor correcto')
                 control_int = 0
             except ValueError:
                 print('Error de tipo / Opción inválida')
                 time.sleep(error_time_delay)
-                # cls() 
+                # cls()
             except TypeError:
                 print('Error de tipo / Opción inválida')
                 time.sleep(error_time_delay)
@@ -99,16 +99,15 @@ def input_validation_type(type,message):
         while control_float == 1:
             try:
                 value = float(input(message))
-                # print('valor correcto')
                 control_float = 0
             except ValueError:
                 print('Error de tipo / Opción inválida')
                 time.sleep(error_time_delay)
-                # cls() 
+                cls()
             except TypeError:
                 print('Error de tipo / Opción inválida')
                 time.sleep(error_time_delay)
-                # cls()
+                cls()
             except Exception as error_detectado:
                 print('Error detectado! -> ', error_detectado)
     else:
@@ -117,6 +116,7 @@ def input_validation_type(type,message):
     return value;
 
 def menu():
+    print('_______________________________')
     print('| × Función          | Opción |')
     print('| × Agregar nota     |    1   |')
     print('| × Ver nota         |    2   |')
@@ -126,7 +126,9 @@ def menu():
     print('| × Reprobados       |    6   |')
     print('| × Limpiar listas   |    7   |')
     print('| × Salir            |    0   |')
-    menu_option = input_validation_type(1,'Ingrese una opción del menú > ')
+    print('_______________________________')
+    print()
+    menu_option = input_validation_type(1,'Ingrese una opción del menú » ')
     return menu_option
 
 def ingreso_notas():
@@ -182,11 +184,18 @@ while opcion != 0:
         for i in range(cant_estudiantes):
             notas_estudiante=[]
             estudiante = str(input('Ingrese el nombre del estudiante > '))
-            entrada_notas = ingreso_notas()
-            # notas_estudiante = statistics.mean(entrada_notas)
-            notas.append(notas_estudiante)
-            entrada = {estudiante:notas_estudiante}
-            estudiantes.update(entrada)     
+            if estudiante not in estudiantes:
+                entrada_notas = ingreso_notas()
+                notas.append(notas_estudiante)
+                entrada = {estudiante:notas_estudiante}
+                estudiantes.update(entrada)
+                cls()
+            else:
+                print('===========================================')
+                print('Estudiante ya existe, intentelo nuevamente')
+                print('===========================================')
+                time.sleep(2)
+                cls()
 
     elif opcion ==2:
         print(' × Ver notas ×')
